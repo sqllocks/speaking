@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jonathan Stewart — Speaking</title>
+<style>
+  :root { --fg:#1a1a1a; --muted:#666; --accent:#0a7d7d; --bg:#fafaf7; }
+  * { box-sizing: border-box; }
+  body { font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--fg); background: var(--bg); margin: 0; padding: 3rem 1.25rem 4rem; }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
+  .tag { color: var(--muted); margin: 0 0 2.5rem; }
+  .tag a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+  h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: .08em;
+       color: var(--muted); margin: 2rem 0 .75rem; font-weight: 600; }
+  ul.sessions { list-style: none; padding: 0; margin: 0; }
+  ul.sessions li { border-top: 1px solid #e5e3dc; padding: 1rem 0; }
+  ul.sessions li:last-child { border-bottom: 1px solid #e5e3dc; }
+  ul.sessions a.title { font-size: 1.15rem; font-weight: 600; color: var(--fg);
+                        text-decoration: none; }
+  ul.sessions a.title:hover { color: var(--accent); }
+  ul.sessions .desc { color: var(--muted); margin: .25rem 0 0; font-size: .95rem; }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 3rem;
+           padding-top: 1rem; border-top: 1px solid #e5e3dc; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Jonathan Stewart — Speaking</h1>
+  <p class="tag">Microsoft Fabric · data platforms · <a href="https://sqlbites.com">sqlbites.com</a></p>
+
+  <h2>Sessions</h2>
+  <ul class="sessions">
+    <li>
+      <a class="title" href="sessions/fabric-fast-track/">Fabric Fast Track</a>
+      <p class="desc">A 90-day blueprint to stand up Microsoft Fabric for a real workload — Assess, Land, Build, Govern, Operate.</p>
+    </li>
+  </ul>
+
+  <footer>
+    Source: <a href="https://github.com/sqllocks/speaking">github.com/sqllocks/speaking</a>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # sqllocks/speaking
 
-Public, durable home for the slides and handouts from sessions taught by **Jonathan Stewart** ([sqlbites.com](https://sqlbites.com)).
+Public, durable home for the slides and handouts from sessions taught by **Jonathan Stewart** ([sqlbites.net](https://sqlbites.net)).
 
 Hosted at: **https://sqllocks.github.io/speaking/**
 
@@ -31,7 +31,7 @@ Adding a new conference = one line in the `events` map at the top of each deck. 
 
 ## Footer convention
 
-Every deck shows: **Jonathan Stewart · sqlbites.com**.
+Every deck shows: **Jonathan Stewart · sqlbites.net**.
 
 When `?event=<slug>` is present, the conference name and date are appended.
 

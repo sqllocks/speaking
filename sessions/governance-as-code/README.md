@@ -1,6 +1,6 @@
 # Governance as Code
 
-A speaking session by **Jonathan Stewart** · [sqlbites.com](https://sqlbites.com)
+A speaking session by **Jonathan Stewart** · [sqlbites.net](https://sqlbites.net)
 
 *Triage an inherited Fabric tenant.*
 

@@ -65,4 +65,4 @@ registration.
 
 ---
 
-Part of the [Governance as Code](../) session · [sqlbites.com](https://sqlbites.com)
+Part of the [Governance as Code](../) session · [sqlbites.net](https://sqlbites.net)

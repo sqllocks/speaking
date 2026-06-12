@@ -13,5 +13,5 @@
 ## Note on the slides
 
 All published PDFs (canonical and per-delivery) are conference-neutral (footer =
-`Jonathan Stewart · sqlbites.com`, no event name). The conference is recorded in
+`Jonathan Stewart · sqlbites.net`, no event name). The conference is recorded in
 the table above, not baked into the footer.

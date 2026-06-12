@@ -1,6 +1,6 @@
 # Stop Borrowing Contoso
 
-A speaking session by **Jonathan Stewart** · [sqlbites.com](https://sqlbites.com)
+A speaking session by **Jonathan Stewart** · [sqlbites.net](https://sqlbites.net)
 
 *Build realistic demo data for Power BI.*
 

@@ -6,7 +6,7 @@
 
 ## How to add a delivery
 
-1. Export the .pptx to PDF, conference-neutral (footer = `Jonathan Stewart · sqlbites.com`, no event name).
+1. Export the .pptx to PDF, conference-neutral (footer = `Jonathan Stewart · sqlbites.net`, no event name).
 2. Save as `deliveries/<event-slug>/slides.pdf`.
 3. Add a row to the table above.
 4. Add a row to the `<table class="deliveries">` in `index.html`.

@@ -14,6 +14,9 @@ construction, not by firefighting DAX after the fact.
 - [View slides (canonical, conference-neutral)](slides.pdf)
 - For a specific delivery, see [deliveries.md](deliveries.md)
 
+## Take-home materials
+- [Live demo recording](materials/warehouse-demo-live.mp4) (MP4, 56s): Direct Lake reading the warehouse's own Parquet files, zero refresh.
+
 ## Deliveries
 See [deliveries.md](deliveries.md) for the history of where this session has been taught.
 

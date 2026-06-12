@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building Scalable Data Warehouses with Microsoft Fabric &mdash; Jonathan Stewart</title>
+<meta name="description" content="Design patterns for enterprise-grade data warehouses on Microsoft Fabric: medallion architecture, the T-SQL warehouse, load patterns, and the semantic layer that sits on top.">
+<style>
+  :root { --fg:#1a1a1a; --muted:#666; --accent:#0a7d7d; --accent-dark:#085a5a; --bg:#fafaf7; --card:#fff; --border:#e5e3dc; }
+  * { box-sizing: border-box; }
+  body { font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         color: var(--fg); background: var(--bg); margin: 0; padding: 2.5rem 1.25rem 4rem; }
+  main { max-width: 760px; margin: 0 auto; }
+  .crumb { color: var(--muted); font-size: .9rem; margin: 0 0 1rem; }
+  .crumb a { color: var(--muted); }
+  h1 { font-size: 2.25rem; margin: 0 0 .5rem; letter-spacing: -.02em; line-height: 1.15; }
+  .byline { color: var(--muted); margin: 0 0 2rem; }
+  .byline a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+  .lead { font-size: 1.1rem; color: #333; margin: 0 0 2rem; }
+  h2 { font-size: .95rem; text-transform: uppercase; letter-spacing: .1em;
+       color: var(--muted); margin: 2.5rem 0 1rem; font-weight: 600; }
+  .btn-primary { display: inline-block; background: var(--accent); color: #fff !important;
+                 padding: .85rem 1.5rem; border-radius: 6px; text-decoration: none;
+                 font-weight: 600; font-size: 1.05rem; transition: background .15s; }
+  .btn-primary:hover { background: var(--accent-dark); }
+  table.deliveries { border-collapse: collapse; width: 100%; margin: 0; }
+  table.deliveries th, table.deliveries td { text-align: left; padding: .6rem .75rem;
+                  border-bottom: 1px solid var(--border); font-size: .95rem; }
+  table.deliveries th { color: var(--muted); font-weight: 600; font-size: .8rem;
+                  text-transform: uppercase; letter-spacing: .05em; }
+  table.deliveries a { color: var(--accent); text-decoration: none; }
+  table.deliveries a:hover { text-decoration: underline; }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 3.5rem;
+           padding-top: 1.25rem; border-top: 1px solid var(--border); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <p class="crumb"><a href="../../">&larr; All sessions</a></p>
+
+  <h1>Building Scalable Data Warehouses with Microsoft Fabric</h1>
+  <p class="byline">A speaking session by <strong>Jonathan Stewart</strong> &middot; <a href="https://sqlbites.net">sqlbites.net</a></p>
+
+  <p class="lead">How to design an enterprise data warehouse on Microsoft Fabric that scales from day one instead of getting refactored under load. Medallion architecture done right, the Fabric T-SQL warehouse, partitioning and incremental load patterns, and the semantic layer that sits on top &mdash; the decisions that decide whether your platform holds up at real volume.</p>
+
+  <p><a class="btn-primary" href="slides.pdf">&#128209; View slides (PDF)</a></p>
+
+  <h2>Deliveries</h2>
+  <table class="deliveries">
+    <thead>
+      <tr><th>Date</th><th>Event</th><th>Location</th><th>Slides</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>2026-05-01</td><td>Day of Data Jacksonville 2026</td><td>Jacksonville, FL</td><td><a href="slides.pdf">PDF</a></td></tr>
+      <tr><td>2026-04-25</td><td>SQLBits 2026</td><td>London, UK</td><td><a href="slides.pdf">PDF</a></td></tr>
+      <tr><td>2026-03-21</td><td>SQL Saturday Atlanta 2026 (AI &amp; BI)</td><td>Atlanta, GA</td><td><a href="slides.pdf">PDF</a></td></tr>
+      <tr><td>2026-03-07</td><td>DataTune 2026</td><td>Nashville, TN</td><td><a href="slides.pdf">PDF</a></td></tr>
+      <tr><td>2025-08-16</td><td>Data Saturday Columbus 2025</td><td>Columbus, OH</td><td><a href="slides.pdf">PDF</a></td></tr>
+      <tr><td>2025-07-26</td><td>SQL Saturday Baton Rouge 2025</td><td>Baton Rouge, LA</td><td><a href="slides.pdf">PDF</a></td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Source: <a href="https://github.com/sqllocks/speaking">github.com/sqllocks/speaking</a>
+  </footer>
+</main>
+</body>
+</html>

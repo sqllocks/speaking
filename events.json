@@ -1,0 +1,85 @@
+{
+  "_comment": "Single source of truth for SQLBites speaking events. Served at https://speaking.sqlbites.net/events.json and consumed by the sqlbites.net homepage strip + /events calendar. To add an event, copy a block. Fields: date (YYYY-MM-DD, required), endDate (optional), title (session/talk), conference, location, conferenceUrl (optional), sessionUrl (optional, link to the session page or detail). Dates drive upcoming-vs-past automatically.",
+  "events": [
+    {
+      "date": "2026-10-08",
+      "title": "Your Warehouse, Your Semantic Model",
+      "conference": "Fabric NYC User Group",
+      "location": "New York, NY",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/your-warehouse-your-semantic-model/"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Stop Borrowing Contoso: Build Realistic Demo Data for Power BI",
+      "conference": "Hampton Roads SQL Server User Group",
+      "location": "Hampton Roads, VA",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/stop-borrowing-contoso/"
+    },
+    {
+      "date": "2026-08-13",
+      "title": "Topic TBD",
+      "conference": "CBUS PASS",
+      "location": "Columbus, OH",
+      "conferenceUrl": "",
+      "sessionUrl": ""
+    },
+    {
+      "date": "2026-06-12",
+      "title": "Your Warehouse, Your Semantic Model",
+      "conference": "Power BI Days DC 2026",
+      "location": "Washington, DC",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/your-warehouse-your-semantic-model/"
+    },
+    {
+      "date": "2026-06-12",
+      "title": "Governance as Code: Triage an Inherited Fabric Tenant",
+      "conference": "Power BI Days DC 2026",
+      "location": "Washington, DC",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/governance-as-code/"
+    },
+    {
+      "date": "2026-06-11",
+      "title": "Stop Borrowing Contoso: Build Realistic Demo Data for Power BI",
+      "conference": "Power BI Days DC 2026",
+      "location": "Washington, DC",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/stop-borrowing-contoso/"
+    },
+    {
+      "date": "2026-05-23",
+      "title": "The Fabric Fast Track Workbook",
+      "conference": "Raleigh Day of Data 2026",
+      "location": "Raleigh, NC",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/fabric-fast-track/"
+    },
+    {
+      "date": "2026-05-01",
+      "title": "Building Scalable Data Warehouses with Microsoft Fabric",
+      "conference": "Day of Data Jacksonville 2026",
+      "location": "Jacksonville, FL",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/building-scalable-data-warehouses/"
+    },
+    {
+      "date": "2026-04-25",
+      "title": "Building Scalable Data Warehouses with Microsoft Fabric",
+      "conference": "SQLBits 2026",
+      "location": "London, UK",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/building-scalable-data-warehouses/"
+    },
+    {
+      "date": "2026-03-14",
+      "title": "From Legacy to Modern: Your Data Platform Migration Strategy Guide",
+      "conference": "Data Saturday Chicago 2026",
+      "location": "Chicago, IL",
+      "conferenceUrl": "",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/from-legacy-to-modern/"
+    }
+  ]
+}

@@ -2,12 +2,38 @@
   "_comment": "Single source of truth for SQLBites speaking events. Served at https://speaking.sqlbites.net/events.json and consumed by the sqlbites.net homepage strip + /events calendar. To add an event, copy a block. Fields: date (YYYY-MM-DD, required), endDate (optional), title (session/talk), conference, location, conferenceUrl (optional), sessionUrl (optional, link to the session page or detail). Dates drive upcoming-vs-past automatically.",
   "events": [
     {
+      "date": "2026-11-09",
+      "endDate": "2026-11-11",
+      "title": "Observability for Microsoft Fabric: What's Happening in Your Platform",
+      "conference": "PASS Data Community Summit West",
+      "location": "Seattle, WA",
+      "conferenceUrl": "",
+      "sessionUrl": ""
+    },
+    {
+      "date": "2026-10-28",
+      "endDate": "2026-10-30",
+      "title": "Your AI Agent Just Ran DELETE Without WHERE. Now What?",
+      "conference": "MITechCon 2026",
+      "location": "Rochester, MI",
+      "conferenceUrl": "https://www.mitechcon.org/",
+      "sessionUrl": ""
+    },
+    {
       "date": "2026-10-08",
       "title": "Your Warehouse, Your Semantic Model",
       "conference": "Fabric NYC User Group",
       "location": "New York, NY",
       "conferenceUrl": "",
       "sessionUrl": "https://speaking.sqlbites.net/sessions/your-warehouse-your-semantic-model/"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "Building Scalable Data Warehouses with Microsoft Fabric",
+      "conference": "Boston Data and AI Saturday 2026",
+      "location": "Boston, MA",
+      "conferenceUrl": "https://dayofdata.org/2026-10-03-dayofdata1150/",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/building-scalable-data-warehouses/"
     },
     {
       "date": "2026-08-19",

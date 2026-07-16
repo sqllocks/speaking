@@ -15,13 +15,24 @@
   .tag a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
   h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: .08em;
        color: var(--muted); margin: 2rem 0 .75rem; font-weight: 600; }
-  ul.sessions { list-style: none; padding: 0; margin: 0; }
-  ul.sessions li { border-top: 1px solid #e5e3dc; padding: 1rem 0; }
-  ul.sessions li:last-child { border-bottom: 1px solid #e5e3dc; }
-  ul.sessions a.title { font-size: 1.15rem; font-weight: 600; color: var(--fg);
+  ul.sessions, ul.workshops { list-style: none; padding: 0; margin: 0; }
+  ul.sessions li, ul.workshops li { border-top: 1px solid #e5e3dc; padding: 1rem 0; }
+  ul.sessions li:last-child, ul.workshops li:last-child { border-bottom: 1px solid #e5e3dc; }
+  ul.sessions a.title, ul.workshops a.title { font-size: 1.15rem; font-weight: 600; color: var(--fg);
                         text-decoration: none; }
-  ul.sessions a.title:hover { color: var(--accent); }
-  ul.sessions .desc { color: var(--muted); margin: .25rem 0 0; font-size: .95rem; }
+  ul.sessions a.title:hover, ul.workshops a.title:hover { color: var(--accent); }
+  ul.sessions .desc, ul.workshops .desc { color: var(--muted); margin: .25rem 0 0; font-size: .95rem; }
+  .badge { display: inline-block; margin-left: .5rem; font-size: .7rem; text-transform: uppercase;
+           letter-spacing: .06em; font-weight: 700; color: var(--accent); border: 1px solid var(--accent);
+           border-radius: 3px; padding: .1rem .4rem; vertical-align: middle; }
+  ul.workshops .cta { margin: .5rem 0 0; font-size: .9rem; }
+  ul.workshops .cta a { color: var(--accent); font-weight: 600; text-decoration: none;
+                         border-bottom: 1px solid currentColor; }
+  ul.workshops .cta a:hover { color: var(--accent-dark, #085a5a); }
+  .bridge { margin: 2rem 0 0; padding: 1rem 1.25rem; background: #fff; border: 1px solid #e5e3dc;
+            border-radius: 6px; font-size: .95rem; color: var(--fg); }
+  .bridge a { color: var(--accent); font-weight: 600; text-decoration: none;
+              border-bottom: 1px solid currentColor; }
   footer { color: var(--muted); font-size: .85rem; margin-top: 3rem;
            padding-top: 1rem; border-top: 1px solid #e5e3dc; }
   footer a { color: var(--muted); }
@@ -32,7 +43,7 @@
   <h1>Jonathan Stewart — Speaking</h1>
   <p class="tag">Microsoft Fabric · data platforms · <a href="https://sqlbites.net">sqlbites.net</a></p>
 
-  <h2>Sessions</h2>
+  <h2>Conference Sessions</h2>
   <ul class="sessions">
     <li>
       <a class="title" href="sessions/your-warehouse-your-semantic-model/">Your Warehouse, Your Semantic Model</a>
@@ -47,10 +58,6 @@
       <p class="desc">Build realistic demo data for Power BI with Spindle, a schema-aware synthetic data engine that keeps the distributions, skew, and edge cases of real data with zero PII.</p>
     </li>
     <li>
-      <a class="title" href="sessions/fabric-fast-track/">Fabric Fast Track</a>
-      <p class="desc">A 90-day blueprint to stand up Microsoft Fabric for a real workload &mdash; Assess, Land, Build, Govern, Operate.</p>
-    </li>
-    <li>
       <a class="title" href="sessions/building-scalable-data-warehouses/">Building Scalable Data Warehouses with Microsoft Fabric</a>
       <p class="desc">Design an enterprise warehouse on Fabric that scales from day one: medallion architecture, the T-SQL warehouse, load patterns, and the semantic layer on top.</p>
     </li>
@@ -63,6 +70,17 @@
       <p class="desc">Correcting visual fallacies. The chart tricks that mislead audiences (truncated axes, misleading area, cherry-picked ranges) and how to fix them so your data tells the truth.</p>
     </li>
   </ul>
+
+  <h2>Workshop Formats</h2>
+  <ul class="workshops">
+    <li>
+      <a class="title" href="sessions/fabric-fast-track/">Fabric Fast Track</a><span class="badge">Half-day workshop</span>
+      <p class="desc">A 90-day blueprint to stand up Microsoft Fabric for a real workload. Assess, Land, Build, Govern, Operate. Delivered with a 5-part take-home bundle: workbook, quick-reference card, self-assessment, 90-day plan, payback calculator.</p>
+      <p class="cta"><a href="https://sqlbites.net/work-with-me/#wwm-workshop">Book this as a workshop &rarr; Work With Me</a></p>
+    </li>
+  </ul>
+
+  <p class="bridge">Looking for a workshop or executive briefing instead of a conference talk? <a href="https://sqlbites.net/work-with-me/">sqlbites.net/work-with-me</a></p>
 
   <footer>
     Source: <a href="https://github.com/sqllocks/speaking">github.com/sqllocks/speaking</a>

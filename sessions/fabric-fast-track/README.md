@@ -1,8 +1,8 @@
 # Fabric Fast Track
 
-A speaking session by **Jonathan Stewart** · [sqlbites.net](https://sqlbites.net)
+A half-day workshop delivered by **Jonathan Stewart** · [sqlbites.net](https://sqlbites.net) · [Book this workshop](https://sqlbites.net/work-with-me/#wwm-workshop)
 
-A 90-day blueprint to stand up Microsoft Fabric for a real workload — **Assess, Land, Build, Govern, Operate.**
+A 90-day blueprint to stand up Microsoft Fabric for a real workload. **Assess, Land, Build, Govern, Operate.**
 
 ## Slides
 - [View slides (canonical)](slides.pdf)

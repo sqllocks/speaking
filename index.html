@@ -3,47 +3,106 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jonathan Stewart — Speaking</title>
+<title>Jonathan Stewart - Speaking</title>
 <style>
-  :root { --fg:#1a1a1a; --muted:#666; --accent:#0a7d7d; --bg:#fafaf7; }
+  :root { --fg:#1a1a1a; --muted:#666; --accent:#0a7d7d; --accent-dark:#085a5a; --bg:#fafaf7; }
   * { box-sizing: border-box; }
   body { font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-         color: var(--fg); background: var(--bg); margin: 0; padding: 3rem 1.25rem 4rem; }
-  main { max-width: 720px; margin: 0 auto; }
-  h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.02em; }
-  .tag { color: var(--muted); margin: 0 0 2.5rem; }
+         color: var(--fg); background: var(--bg); margin: 0; padding: 0 0 4rem; }
+  main { max-width: 760px; margin: 0 auto; padding: 0 1.25rem; }
+
+  nav.top { position: sticky; top: 0; z-index: 10; background: var(--bg);
+            border-bottom: 1px solid #e5e3dc; }
+  nav.top .inner { max-width: 760px; margin: 0 auto; padding: .9rem 1.25rem;
+                    display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  nav.top .brand { font-weight: 700; }
+  nav.top .links { display: flex; align-items: center; gap: 1.25rem; font-size: .92rem; }
+  nav.top .links a { color: var(--fg); text-decoration: none; }
+  nav.top .links a:hover { color: var(--accent); }
+  nav.top .links a.cta { color: #fff; background: var(--accent); padding: .4rem .85rem;
+                          border-radius: 5px; font-weight: 600; }
+  nav.top .links a.cta:hover { background: var(--accent-dark); }
+
+  h1 { font-size: 2rem; margin: 2.5rem 0 .25rem; letter-spacing: -.02em; }
+  .tag { color: var(--muted); margin: 0 0 1.5rem; }
   .tag a { color: var(--accent); text-decoration: none; border-bottom: 1px solid currentColor; }
+
+  .frame-strip { margin: 0 0 2rem; padding: 1rem 1.25rem; background: #fff;
+                 border: 1px solid #e5e3dc; border-radius: 6px; font-size: .95rem; }
+  .frame-strip .eyebrow { display: block; font-size: .72rem; text-transform: uppercase;
+                           letter-spacing: .08em; font-weight: 700; color: var(--accent); margin: 0 0 .35rem; }
+  .frame-strip a { color: var(--accent); font-weight: 600; text-decoration: none;
+                   border-bottom: 1px solid currentColor; }
+
   h2 { font-size: 1.1rem; text-transform: uppercase; letter-spacing: .08em;
-       color: var(--muted); margin: 2rem 0 .75rem; font-weight: 600; }
+       color: var(--muted); margin: 2rem 0 .25rem; font-weight: 600; }
+  .section-note { color: var(--muted); font-size: .82rem; margin: 0 0 .75rem; }
+
   ul.sessions, ul.workshops { list-style: none; padding: 0; margin: 0; }
   ul.sessions li, ul.workshops li { border-top: 1px solid #e5e3dc; padding: 1rem 0; }
   ul.sessions li:last-child, ul.workshops li:last-child { border-bottom: 1px solid #e5e3dc; }
-  ul.sessions a.title, ul.workshops a.title { font-size: 1.15rem; font-weight: 600; color: var(--fg);
+  ul.sessions a.title, ul.workshops a.title, ul.workshops span.title { font-size: 1.15rem; font-weight: 600; color: var(--fg);
                         text-decoration: none; }
   ul.sessions a.title:hover, ul.workshops a.title:hover { color: var(--accent); }
   ul.sessions .desc, ul.workshops .desc { color: var(--muted); margin: .25rem 0 0; font-size: .95rem; }
+
+  ul.workshops { background: #fff; border: 1px solid #e5e3dc; border-radius: 8px;
+                 padding: .25rem 1.25rem; margin-bottom: .5rem; }
+  ul.workshops li { border-top-color: #e5e3dc; }
+  ul.workshops li:first-child { border-top: none; }
+  ul.workshops li:last-child { border-bottom: none; }
+
   .badge { display: inline-block; margin-left: .5rem; font-size: .7rem; text-transform: uppercase;
            letter-spacing: .06em; font-weight: 700; color: var(--accent); border: 1px solid var(--accent);
            border-radius: 3px; padding: .1rem .4rem; vertical-align: middle; }
   ul.workshops .cta { margin: .5rem 0 0; font-size: .9rem; }
   ul.workshops .cta a { color: var(--accent); font-weight: 600; text-decoration: none;
                          border-bottom: 1px solid currentColor; }
-  ul.workshops .cta a:hover { color: var(--accent-dark, #085a5a); }
-  .bridge { margin: 2rem 0 0; padding: 1rem 1.25rem; background: #fff; border: 1px solid #e5e3dc;
-            border-radius: 6px; font-size: .95rem; color: var(--fg); }
-  .bridge a { color: var(--accent); font-weight: 600; text-decoration: none;
-              border-bottom: 1px solid currentColor; }
+  ul.workshops .cta a:hover { color: var(--accent-dark); }
+
   footer { color: var(--muted); font-size: .85rem; margin-top: 3rem;
            padding-top: 1rem; border-top: 1px solid #e5e3dc; }
   footer a { color: var(--muted); }
+  footer .wwm { float: right; }
 </style>
 </head>
 <body>
+<nav class="top">
+  <div class="inner">
+    <span class="brand">Jonathan Stewart</span>
+    <span class="links">
+      <a href="#workshops">Workshops</a>
+      <a href="#sessions">Conference Sessions</a>
+      <a class="cta" href="https://sqlbites.net/work-with-me/">Work With Me</a>
+    </span>
+  </div>
+</nav>
 <main>
-  <h1>Jonathan Stewart — Speaking</h1>
+  <h1>Jonathan Stewart - Speaking</h1>
   <p class="tag">Microsoft Fabric · data platforms · <a href="https://sqlbites.net">sqlbites.net</a></p>
 
-  <h2>Conference Sessions</h2>
+  <div class="frame-strip">
+    <span class="eyebrow">Evidence base</span>
+    This is the practice record behind Jonathan's advisory and workshop engagements. For an executive briefing or workshop, start at <a href="https://sqlbites.net/work-with-me/">Work With Me</a>.
+  </div>
+
+  <h2 id="workshops">Workshops</h2>
+  <p class="section-note">Products, not talks. Booked through Work With Me.</p>
+  <ul class="workshops">
+    <li>
+      <a class="title" href="sessions/fabric-fast-track/">Fabric Fast Track</a><span class="badge">Half-day workshop</span>
+      <p class="desc">A 90-day blueprint to stand up Microsoft Fabric for a real workload. Assess, Land, Build, Govern, Operate. Delivered with a 5-part take-home bundle: workbook, quick-reference card, self-assessment, 90-day plan, payback calculator.</p>
+      <p class="cta"><a href="https://sqlbites.net/work-with-me/#wwm-workshop">Book this as a workshop &rarr; Work With Me</a></p>
+    </li>
+    <li>
+      <span class="title">Fabric AI Governance: A Field Guide</span><span class="badge">Full-day workshop</span>
+      <p class="desc">A full-day format for enterprise AI governance rollouts.</p>
+      <p class="cta"><a href="https://sqlbites.net/work-with-me/#wwm-workshop">Book this as a workshop &rarr; Work With Me</a></p>
+    </li>
+  </ul>
+
+  <h2 id="sessions">Conference Sessions</h2>
+  <p class="section-note">Proof, not product. Delivery history and slides.</p>
   <ul class="sessions">
     <li>
       <a class="title" href="sessions/your-warehouse-your-semantic-model/">Your Warehouse, Your Semantic Model</a>
@@ -58,11 +117,11 @@
       <p class="desc">Build realistic demo data for Power BI with Spindle, a schema-aware synthetic data engine that keeps the distributions, skew, and edge cases of real data with zero PII.</p>
     </li>
     <li>
-      <a class="title" href="sessions/building-scalable-data-warehouses/">Building Scalable Data Warehouses with Microsoft Fabric</a>
+      <a class="title" href="sessions/building-scalable-data-warehouses/">Building Scalable Data Warehouses with Microsoft Fabric</a><span class="badge">6&times; delivered</span>
       <p class="desc">Design an enterprise warehouse on Fabric that scales from day one: medallion architecture, the T-SQL warehouse, load patterns, and the semantic layer on top.</p>
     </li>
     <li>
-      <a class="title" href="sessions/from-legacy-to-modern/">From Legacy to Modern: Migration Strategy Guide</a>
+      <a class="title" href="sessions/from-legacy-to-modern/">From Legacy to Modern: Your Data Platform Migration Strategy Guide</a>
       <p class="desc">A practical playbook for migrating a legacy data platform to Microsoft Fabric in phases, not a big-bang rewrite. Sequencing, quick wins, and the traps that stall migrations.</p>
     </li>
     <li>
@@ -71,18 +130,8 @@
     </li>
   </ul>
 
-  <h2>Workshop Formats</h2>
-  <ul class="workshops">
-    <li>
-      <a class="title" href="sessions/fabric-fast-track/">Fabric Fast Track</a><span class="badge">Half-day workshop</span>
-      <p class="desc">A 90-day blueprint to stand up Microsoft Fabric for a real workload. Assess, Land, Build, Govern, Operate. Delivered with a 5-part take-home bundle: workbook, quick-reference card, self-assessment, 90-day plan, payback calculator.</p>
-      <p class="cta"><a href="https://sqlbites.net/work-with-me/#wwm-workshop">Book this as a workshop &rarr; Work With Me</a></p>
-    </li>
-  </ul>
-
-  <p class="bridge">Looking for a workshop or executive briefing instead of a conference talk? <a href="https://sqlbites.net/work-with-me/">sqlbites.net/work-with-me</a></p>
-
   <footer>
+    <a class="wwm" href="https://sqlbites.net/work-with-me/">Work With Me &rarr;</a>
     Source: <a href="https://github.com/sqllocks/speaking">github.com/sqllocks/speaking</a>
   </footer>
 </main>

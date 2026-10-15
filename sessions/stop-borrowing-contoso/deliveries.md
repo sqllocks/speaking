@@ -2,7 +2,11 @@
 
 | Date       | Event                  | Location       | Format | Slides                                        |
 |------------|------------------------|----------------|--------|-----------------------------------------------|
-| 2026-06-11 | Power BI Days DC 2026   | Washington, DC | 60 min | [PDF](deliveries/pbidays-dc-2026/slides.pdf)  |
+| 2026-06-11 | Power BI Days DC 2026   | Washington, DC | 50 min | [PDF](deliveries/pbidays-dc-2026/slides.pdf)  |
+
+## Power BI Days DC 2026 delivery details
+
+Owner-confirmed October 15, 2026: 2026-06-11, 11:00–11:50 AM EDT (Eastern Time), room 13.1 A (13th floor).
 
 ## How to add a delivery
 

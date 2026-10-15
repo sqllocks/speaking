@@ -7,8 +7,8 @@
       "title": "Observability for Microsoft Fabric: What's Happening in Your Platform",
       "conference": "PASS Data Community Summit West",
       "location": "Seattle, WA",
-      "conferenceUrl": "",
-      "sessionUrl": ""
+      "conferenceUrl": "https://passdatacommunitysummit.com/west/",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/observability-for-microsoft-fabric/"
     },
     {
       "date": "2026-10-28",
@@ -17,14 +17,14 @@
       "conference": "MITechCon 2026",
       "location": "Rochester, MI",
       "conferenceUrl": "https://www.mitechcon.org/",
-      "sessionUrl": ""
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/your-ai-agent-just-ran-delete-without-where/"
     },
     {
       "date": "2026-10-08",
       "title": "Your Warehouse, Your Semantic Model",
       "conference": "Fabric NYC User Group",
       "location": "New York, NY",
-      "conferenceUrl": "",
+      "conferenceUrl": "https://community.fabric.microsoft.com/event/fabricnycusergroupoccasion-board/nyc-fabric-community-jonathan-stewart--build-the-semantic-model-on-data-that-doe/5368261",
       "sessionUrl": "https://speaking.sqlbites.net/sessions/your-warehouse-your-semantic-model/"
     },
     {
@@ -40,16 +40,16 @@
       "title": "Translytical Task Flows: So Much More Than Write-Back",
       "conference": "Hampton Roads SQL Server User Group",
       "location": "Hampton Roads, VA",
-      "conferenceUrl": "",
-      "sessionUrl": ""
+      "conferenceUrl": "https://www.meetup.com/hampton-roads-sql-server-user-group/events/315270631/",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/translytical-task-flows/"
     },
     {
       "date": "2026-08-13",
-      "title": "Topic TBD",
+      "title": "Translytical Task Flows: So Much More Than Write-Back",
       "conference": "CBUS PASS",
       "location": "Columbus, OH",
-      "conferenceUrl": "",
-      "sessionUrl": ""
+      "conferenceUrl": "https://www.meetup.com/cbuspass/events/315721207/",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/translytical-task-flows/"
     },
     {
       "date": "2026-06-12",
@@ -80,15 +80,15 @@
       "title": "The Fabric Fast Track Workbook",
       "conference": "Raleigh Day of Data 2026",
       "location": "Raleigh, NC",
-      "conferenceUrl": "",
+      "conferenceUrl": "https://dayofdata.org/2026-05-23-dayofdata1143/",
       "sessionUrl": "https://speaking.sqlbites.net/sessions/fabric-fast-track/"
     },
     {
-      "date": "2026-05-01",
+      "date": "2026-05-02",
       "title": "Building Scalable Data Warehouses with Microsoft Fabric",
       "conference": "Day of Data Jacksonville 2026",
       "location": "Jacksonville, FL",
-      "conferenceUrl": "",
+      "conferenceUrl": "https://dayofdata.org/2026-05-02-dayofdata1128/",
       "sessionUrl": "https://speaking.sqlbites.net/sessions/building-scalable-data-warehouses/"
     },
     {
@@ -96,7 +96,7 @@
       "title": "Building Scalable Data Warehouses with Microsoft Fabric",
       "conference": "SQLBits 2026",
       "location": "London, UK",
-      "conferenceUrl": "",
+      "conferenceUrl": "https://sqlbits.com/",
       "sessionUrl": "https://speaking.sqlbites.net/sessions/building-scalable-data-warehouses/"
     },
     {
@@ -104,7 +104,7 @@
       "title": "From Legacy to Modern: Your Data Platform Migration Strategy Guide",
       "conference": "Data Saturday Chicago 2026",
       "location": "Chicago, IL",
-      "conferenceUrl": "",
+      "conferenceUrl": "https://datasaturdays.com/Event/20260314-datasaturday0076",
       "sessionUrl": "https://speaking.sqlbites.net/sessions/from-legacy-to-modern/"
     }
   ]

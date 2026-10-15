@@ -4,7 +4,8 @@ Last 12 months (most recent first):
 
 | Date       | Event                              | Location         |
 |------------|------------------------------------|------------------|
-| 2026-05-01 | Day of Data Jacksonville 2026      | Jacksonville, FL |
+| 2026-10-03 | Boston Data and AI Saturday 2026 | Boston, MA |
+| 2026-05-02 | Day of Data Jacksonville 2026      | Jacksonville, FL |
 | 2026-04-25 | SQLBits 2026                       | London, UK       |
 | 2026-03-21 | SQL Saturday Atlanta 2026 (AI & BI)| Atlanta, GA      |
 | 2026-03-07 | DataTune 2026                      | Nashville, TN    |

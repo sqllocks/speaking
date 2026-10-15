@@ -24,7 +24,7 @@
       "title": "Your Warehouse, Your Semantic Model",
       "conference": "Fabric NYC User Group",
       "location": "New York, NY",
-      "conferenceUrl": "",
+      "conferenceUrl": "https://community.fabric.microsoft.com/event/fabricnycusergroupoccasion-board/nyc-fabric-community-jonathan-stewart--build-the-semantic-model-on-data-that-doe/5368261",
       "sessionUrl": "https://speaking.sqlbites.net/sessions/your-warehouse-your-semantic-model/"
     },
     {
@@ -40,16 +40,16 @@
       "title": "Translytical Task Flows: So Much More Than Write-Back",
       "conference": "Hampton Roads SQL Server User Group",
       "location": "Hampton Roads, VA",
-      "conferenceUrl": "",
+      "conferenceUrl": "https://www.meetup.com/hampton-roads-sql-server-user-group/events/315270631/",
       "sessionUrl": "https://speaking.sqlbites.net/sessions/translytical-task-flows/"
     },
     {
       "date": "2026-08-13",
-      "title": "Topic TBD",
+      "title": "Translytical Task Flows: So Much More Than Write-Back",
       "conference": "CBUS PASS",
       "location": "Columbus, OH",
-      "conferenceUrl": "",
-      "sessionUrl": ""
+      "conferenceUrl": "https://www.meetup.com/cbuspass/events/315721207/",
+      "sessionUrl": "https://speaking.sqlbites.net/sessions/translytical-task-flows/"
     },
     {
       "date": "2026-06-12",
@@ -84,7 +84,7 @@
       "sessionUrl": "https://speaking.sqlbites.net/sessions/fabric-fast-track/"
     },
     {
-      "date": "2026-05-01",
+      "date": "2026-05-02",
       "title": "Building Scalable Data Warehouses with Microsoft Fabric",
       "conference": "Day of Data Jacksonville 2026",
       "location": "Jacksonville, FL",

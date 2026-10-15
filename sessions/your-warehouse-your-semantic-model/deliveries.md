@@ -3,7 +3,11 @@
 | Date       | Event                  | Location       | Format | Slides                                        |
 |------------|------------------------|----------------|--------|-----------------------------------------------|
 | 2026-10-08 | Fabric NYC User Group | New York, NY | — | [Session page](./) |
-| 2026-06-12 | Power BI Days DC 2026   | Washington, DC | 60 min | [PDF](deliveries/pbidays-dc-2026/slides.pdf)  |
+| 2026-06-12 | Power BI Days DC 2026   | Washington, DC | 50 min | [PDF](deliveries/pbidays-dc-2026/slides.pdf)  |
+
+## Power BI Days DC 2026 delivery details
+
+Owner-confirmed October 15, 2026: 2026-06-12, 2:30–3:20 PM EDT (Eastern Time), room Theater (14th floor).
 
 ## How to add a delivery
 

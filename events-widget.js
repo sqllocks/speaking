@@ -14,7 +14,11 @@
   }
   function parse(s) { var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
 
-  var today = new Date(); today.setHours(0, 0, 0, 0);
+  var eastern = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).formatToParts(new Date());
+  function part(type) { return eastern.filter(function (p) { return p.type === type; })[0].value; }
+  var today = parse(part('year') + '-' + part('month') + '-' + part('day'));
 
   fetch(SRC).then(function (r) { return r.json(); }).then(function (data) {
     var EV = (data.events || []).map(function (e, i) { e.d = parse(e.date); e.idx = i; return e; });
@@ -40,8 +44,8 @@
         '<div class="event-loc">&#128205; ' + esc(e.location || '') + '</div>' +
         '<div class="event-session">' + esc(e.title) + '</div>' +
         '<span class="event-tag upcoming">Upcoming</span>';
-      var href = e.sessionUrl || e.conferenceUrl || 'https://sqlbites.net/events/';
-      return '<a href="' + esc(href) + '" class="event-card">' + inner + '</a>';
+      if (!e.sessionUrl) return '<div class="event-card">' + inner + '<div class="event-session">Materials coming soon</div></div>';
+      return '<a href="' + esc(e.sessionUrl) + '" class="event-card">' + inner + '</a>';
     }).join('');
   }
 
@@ -99,6 +103,7 @@
           : esc(e.conference);
         var links = '';
         if (e.sessionUrl) links += '<a href="' + esc(e.sessionUrl) + '" target="_blank" rel="noopener">Slides &amp; materials &#8594;</a>';
+        else links += '<span>Materials coming soon</span>';
         if (e.conferenceUrl) links += '<a href="' + esc(e.conferenceUrl) + '" target="_blank" rel="noopener">Conference &#8594;</a>';
         var row = document.createElement('div');
         row.className = 'ev-row' + (isUp ? ' up' : '');

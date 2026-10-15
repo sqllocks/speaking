@@ -46,3 +46,29 @@ When `?event=<slug>` is present, the conference name and date are appended.
 1. Add a row to that session's `deliveries.md`.
 2. Add a line to the `events` map inside the session's `index.html`.
 3. Share `…/<session>/?event=<slug>`.
+
+## Speaking calendar and materials
+
+`events.json` is the source for both public calendar widgets and `events.ics`.
+Keep its field names unchanged. After editing the calendar, regenerate and check:
+
+```bash
+python scripts/build_ics.py
+python scripts/test_build_ics.py
+python scripts/check_links.py
+```
+
+The feed includes all entries as all-day dates in Eastern Time because no talk
+times are supplied. JSON `endDate` is inclusive; iCalendar `DTEND` is exclusive.
+The required iCalendar `DTSTAMP` is a UTC generation timestamp, not a session time.
+UIDs are deterministic from each entry's date, conference, and title.
+
+A session without slides can start with a materials landing page. The three new
+landing pages show “Slides will be posted after the session” and offer a PDF link
+only after `slides.pdf` responds successfully as a PDF. Add the PDF to the session
+folder when ready; no slide deck is generated. Delivery links use `?event=<slug>`
+for branding. The older static session pages record conference details in their
+delivery tables and do not currently read that parameter.
+
+See [OWNER-QUESTIONS.md](OWNER-QUESTIONS.md) for draft content needing confirmation,
+official URL evidence, and unresolved calendar details.

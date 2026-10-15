@@ -1,0 +1,172 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SQLBites//Speaking Calendar//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:SQLBites Speaking Calendar
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:4dfb7515-f213-5046-bcee-ddc1e659d773@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261112
+SUMMARY:Observability for Microsoft Fabric: What's Happening in Your Platfo
+ rm
+LOCATION:Seattle\, WA
+DESCRIPTION:PASS Data Community Summit West\nObservability for Microsoft Fa
+ bric: What's Happening in Your Platform\nConference: https://passdatacommu
+ nitysummit.com/west/\nMaterials: https://speaking.sqlbites.net/sessions/ob
+ servability-for-microsoft-fabric/
+URL:https://speaking.sqlbites.net/sessions/observability-for-microsoft-fabr
+ ic/
+END:VEVENT
+BEGIN:VEVENT
+UID:0150a279-0dff-5668-a318-5c3b0094af2f@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261031
+SUMMARY:Your AI Agent Just Ran DELETE Without WHERE. Now What?
+LOCATION:Rochester\, MI
+DESCRIPTION:MITechCon 2026\nYour AI Agent Just Ran DELETE Without WHERE. No
+ w What?\nConference: https://www.mitechcon.org/\nMaterials: https://speaki
+ ng.sqlbites.net/sessions/your-ai-agent-just-ran-delete-without-where/
+URL:https://speaking.sqlbites.net/sessions/your-ai-agent-just-ran-delete-wi
+ thout-where/
+END:VEVENT
+BEGIN:VEVENT
+UID:5292a4c1-7a4e-5694-8395-d38611428726@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:Your Warehouse\, Your Semantic Model
+LOCATION:New York\, NY
+DESCRIPTION:Fabric NYC User Group\nYour Warehouse\, Your Semantic Model\nMa
+ terials: https://speaking.sqlbites.net/sessions/your-warehouse-your-semant
+ ic-model/
+URL:https://speaking.sqlbites.net/sessions/your-warehouse-your-semantic-mod
+ el/
+END:VEVENT
+BEGIN:VEVENT
+UID:5e27c741-5d68-53a6-b904-c2199601ee7b@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20261003
+DTEND;VALUE=DATE:20261004
+SUMMARY:Building Scalable Data Warehouses with Microsoft Fabric
+LOCATION:Boston\, MA
+DESCRIPTION:Boston Data and AI Saturday 2026\nBuilding Scalable Data Wareho
+ uses with Microsoft Fabric\nConference: https://dayofdata.org/2026-10-03-d
+ ayofdata1150/\nMaterials: https://speaking.sqlbites.net/sessions/building-
+ scalable-data-warehouses/
+URL:https://speaking.sqlbites.net/sessions/building-scalable-data-warehouse
+ s/
+END:VEVENT
+BEGIN:VEVENT
+UID:3712e197-c540-5dae-bca1-02caf1bb589b@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260820
+SUMMARY:Translytical Task Flows: So Much More Than Write-Back
+LOCATION:Hampton Roads\, VA
+DESCRIPTION:Hampton Roads SQL Server User Group\nTranslytical Task Flows: S
+ o Much More Than Write-Back\nMaterials: https://speaking.sqlbites.net/sess
+ ions/translytical-task-flows/
+URL:https://speaking.sqlbites.net/sessions/translytical-task-flows/
+END:VEVENT
+BEGIN:VEVENT
+UID:fdd5fb6f-6302-5ce7-a9ee-2f9c843414f2@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:Topic TBD
+LOCATION:Columbus\, OH
+DESCRIPTION:CBUS PASS\nTopic TBD\nMaterials: Materials coming soon
+END:VEVENT
+BEGIN:VEVENT
+UID:205fae3b-8cbc-57f4-bf31-6ccd01efad09@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260613
+SUMMARY:Your Warehouse\, Your Semantic Model
+LOCATION:Washington\, DC
+DESCRIPTION:Power BI Days DC 2026\nYour Warehouse\, Your Semantic Model\nMa
+ terials: https://speaking.sqlbites.net/sessions/your-warehouse-your-semant
+ ic-model/
+URL:https://speaking.sqlbites.net/sessions/your-warehouse-your-semantic-mod
+ el/
+END:VEVENT
+BEGIN:VEVENT
+UID:adf9c33b-f114-58fa-8927-ed93491b05d0@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260613
+SUMMARY:Governance as Code: Triage an Inherited Fabric Tenant
+LOCATION:Washington\, DC
+DESCRIPTION:Power BI Days DC 2026\nGovernance as Code: Triage an Inherited 
+ Fabric Tenant\nMaterials: https://speaking.sqlbites.net/sessions/governanc
+ e-as-code/
+URL:https://speaking.sqlbites.net/sessions/governance-as-code/
+END:VEVENT
+BEGIN:VEVENT
+UID:467950f5-c9f6-5a26-9ed0-ddaa2530c63f@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260612
+SUMMARY:Stop Borrowing Contoso: Build Realistic Demo Data for Power BI
+LOCATION:Washington\, DC
+DESCRIPTION:Power BI Days DC 2026\nStop Borrowing Contoso: Build Realistic 
+ Demo Data for Power BI\nMaterials: https://speaking.sqlbites.net/sessions/
+ stop-borrowing-contoso/
+URL:https://speaking.sqlbites.net/sessions/stop-borrowing-contoso/
+END:VEVENT
+BEGIN:VEVENT
+UID:c10d6aaa-04c7-5ce1-bd62-2044ba8eb75f@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+SUMMARY:The Fabric Fast Track Workbook
+LOCATION:Raleigh\, NC
+DESCRIPTION:Raleigh Day of Data 2026\nThe Fabric Fast Track Workbook\nConfe
+ rence: https://dayofdata.org/2026-05-23-dayofdata1143/\nMaterials: https:/
+ /speaking.sqlbites.net/sessions/fabric-fast-track/
+URL:https://speaking.sqlbites.net/sessions/fabric-fast-track/
+END:VEVENT
+BEGIN:VEVENT
+UID:3675779d-e8d3-52ff-9f4e-ee82b0ebf253@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:Building Scalable Data Warehouses with Microsoft Fabric
+LOCATION:Jacksonville\, FL
+DESCRIPTION:Day of Data Jacksonville 2026\nBuilding Scalable Data Warehouse
+ s with Microsoft Fabric\nConference: https://dayofdata.org/2026-05-02-dayo
+ fdata1128/\nMaterials: https://speaking.sqlbites.net/sessions/building-sca
+ lable-data-warehouses/
+URL:https://speaking.sqlbites.net/sessions/building-scalable-data-warehouse
+ s/
+END:VEVENT
+BEGIN:VEVENT
+UID:0f6161b9-572e-5493-803c-39057ff83656@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20260426
+SUMMARY:Building Scalable Data Warehouses with Microsoft Fabric
+LOCATION:London\, UK
+DESCRIPTION:SQLBits 2026\nBuilding Scalable Data Warehouses with Microsoft 
+ Fabric\nConference: https://sqlbits.com/\nMaterials: https://speaking.sqlb
+ ites.net/sessions/building-scalable-data-warehouses/
+URL:https://speaking.sqlbites.net/sessions/building-scalable-data-warehouse
+ s/
+END:VEVENT
+BEGIN:VEVENT
+UID:405922bb-15f0-50ea-9f46-faa8423fbd12@speaking.sqlbites.net
+DTSTAMP:20261015T155029Z
+DTSTART;VALUE=DATE:20260314
+DTEND;VALUE=DATE:20260315
+SUMMARY:From Legacy to Modern: Your Data Platform Migration Strategy Guide
+LOCATION:Chicago\, IL
+DESCRIPTION:Data Saturday Chicago 2026\nFrom Legacy to Modern: Your Data Pl
+ atform Migration Strategy Guide\nConference: https://datasaturdays.com/Eve
+ nt/20260314-datasaturday0076\nMaterials: https://speaking.sqlbites.net/ses
+ sions/from-legacy-to-modern/
+URL:https://speaking.sqlbites.net/sessions/from-legacy-to-modern/
+END:VEVENT
+END:VCALENDAR

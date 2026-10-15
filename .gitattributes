@@ -1,0 +1,2 @@
+# RFC 5545 requires CRLF; folded content may include spaces at line boundaries.
+events.ics -text whitespace=-blank-at-eol

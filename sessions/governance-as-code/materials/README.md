@@ -42,7 +42,7 @@ python triage_scanner.py --tenant <YOUR_TENANT_ID> --days 7 \
 python triage_scanner.py --demo-data
 ```
 
-Outputs land as CSVs in the `--out` directory (default `./`), one per list.
+Outputs land as CSVs in the `--out` directory (default `./output`), one per list.
 
 ## API contracts (verified against Microsoft Learn)
 

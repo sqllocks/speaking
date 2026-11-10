@@ -19,7 +19,7 @@ This isn’t a product demo. You’ll leave with patterns, queries, and scripts 
 
 ## Session
 
-PASS Data Community Summit West · Wednesday, 2026-11-11 · 2:15–3:30 PM Pacific · Room 306 Duwamish
+PASS Data Community Summit West · Wednesday, 2026-11-11 · 11:30 AM–12:45 PM Pacific · Room 306 Duwamish
 
 ## Slides
 

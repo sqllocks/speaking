@@ -1,0 +1,21 @@
+// 08 - Correlate a slow job with capacity pressure
+// Status : IDEA, NOT RUN. A starting point, not a tested query. Both sources
+//          carry item and capacity identifiers (per Microsoft Learn), but the
+//          join keys have not been confirmed against a real tenant. Only show
+//          this live if you have real overlapping data.
+// Shape  : jobs that ran long -> the capacity operations for the same item in
+//          the same time window.
+let slow = ItemJobEventLogs
+    | where JobStatus == "Completed" and JobStartTime > ago(1d)
+    | where DurationMs > 10 * 60 * 1000          // example: longer than 10 minutes
+    | project ItemId, ItemName, JobStartTime, JobEndTime, DurationMs;
+slow
+| join kind=inner (
+    CapacityOperations
+    | project itemId, operationStartTime, capacityUnitMs, throttlingDelayMs
+  ) on $left.ItemId == $right.itemId
+| where operationStartTime between (JobStartTime .. JobEndTime)
+| summarize CU_seconds = sum(capacityUnitMs) / 1000.0,
+            ThrottleDelay_seconds = sum(throttlingDelayMs) / 1000.0
+    by ItemName, JobStartTime, DurationMs
+| order by CU_seconds desc

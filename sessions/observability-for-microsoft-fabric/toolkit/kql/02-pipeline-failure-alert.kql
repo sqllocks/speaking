@@ -1,0 +1,14 @@
+// 02 - Pipeline failure alert (last 9 minutes)
+// Source : workspace monitoring, table ItemJobEventLogs
+// Status : RAN LIVE 2026-11-03. Adapted from the Microsoft Learn example in
+//          "data-factory/workspace-monitoring".
+// Use    : save as a KQL queryset, then add an alert (Activator) that runs it
+//          every few minutes and emails you when it returns any rows.
+// Tune   : the window (540 s) must be a little longer than your alert interval,
+//          or failures can slip between two checks.
+ItemJobEventLogs
+| extend SecondsAgo = datetime_diff('second', now(), ingestion_time())
+| where JobType == 'Pipeline' and JobStatus == 'Failed'
+| where SecondsAgo <= 540
+| order by Timestamp desc
+| project Timestamp, ItemName, WorkspaceName, JobStartTime, JobEndTime, JobStatus

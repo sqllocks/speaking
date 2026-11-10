@@ -1,0 +1,21 @@
+// 04 - Duration drift: "green but wrong"
+// Source : workspace monitoring, table ItemJobEventLogs
+// Status : RAN LIVE 2026-11-03. Flagged a notebook at about 2.75 min against a
+//          median of about 0.22 min. The baseline in that demo was only minutes
+//          old, so treat the demo numbers as illustrative.
+// Why    : a job that Completed but took far longer than normal still cost you
+//          capacity, and it is often the first sign of a problem.
+// Tune   : a 14-day baseline fits the 30-day default retention. 3x is a
+//          starting point, not a rule.
+// Note   : filters to Completed rows, so the earlier state-change rows
+//          (DurationMs = 0) do not distort the median.
+let baseline = ItemJobEventLogs
+    | where JobStatus == "Completed" and JobStartTime > ago(14d)
+    | summarize BaselineMin = percentile(DurationMs, 50) / 60000.0 by ItemName, JobType;
+ItemJobEventLogs
+| where JobStatus == "Completed" and JobStartTime > ago(1d)
+| extend RunMin = DurationMs / 60000.0
+| join kind=inner baseline on ItemName, JobType
+| where RunMin > 3 * BaselineMin
+| project JobStartTime, ItemName, JobType, RunMin, BaselineMin
+| order by RunMin desc

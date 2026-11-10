@@ -1,0 +1,15 @@
+// 07 - Which ITEM is eating the capacity (capacity operation events)
+// Source : capacity operation events, routed to an Eventhouse table. The table
+//          name depends on how you route them; replace CapacityOperations.
+// Status : NOT YET RUN. Column names come from the documented event schema
+//          (Microsoft Learn "real-time-hub/explore-fabric-capacity-operation-events").
+//          Run it once your events land and fix any column that differs.
+// Cost   : operation events arrive once per operation that uses CU. Read
+//          docs/capacity-cost-of-monitoring.md before you route them.
+CapacityOperations
+| where operationStartTime > ago(7d)
+| summarize CU_seconds = sum(capacityUnitMs) / 1000.0,
+            ThrottleDelay_seconds = sum(throttlingDelayMs) / 1000.0
+    by workspaceName, itemName, itemKind
+| order by CU_seconds desc
+| take 15

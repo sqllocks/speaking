@@ -1,0 +1,24 @@
+// 05 - Capacity utilization over time
+// Source : capacity overview events, routed to an Eventhouse table named
+//          CapacityEvents (Real-Time hub > Capacity overview events >
+//          Create Eventstream > Eventhouse).
+// Status : RAN LIVE 2026-11-03 on an F2 (returned 15.72% at the time).
+//          Adapted from Microsoft Learn
+//          "real-time-hub/explore-fabric-capacity-overview-events".
+// Caveat : the routed table keeps every metric inside the dynamic `data`
+//          column. `time`, `first` and `last` are reserved words; write
+//          ['time'] if you project it.
+CapacityEvents
+| where type has 'Summary'
+| extend windowStartTime = todatetime(data.windowStartTime),
+         windowEndTime   = todatetime(data.windowEndTime),
+         capacityId      = tostring(data.capacityId),
+         baseCapacityUnits = todouble(data.baseCapacityUnits),
+         capacityUnitMs  = todouble(data.capacityUnitMs)
+| summarize take_any(*) by windowStartTime, windowEndTime, capacityId   // delivery is best-effort: removes duplicates
+| extend capacityUnitMsBudget = baseCapacityUnits * 1000 * 30           // 30-second windows
+| extend UtilizationPct = round(capacityUnitMs / capacityUnitMsBudget * 100, 2)
+| where UtilizationPct < 500                                            // drops the artificial spike when a capacity is paused
+| project windowStartTime, UtilizationPct
+| order by windowStartTime asc
+| render timechart

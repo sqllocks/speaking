@@ -25,6 +25,10 @@ PASS Data Community Summit West · Wednesday, 2026-11-11 · 2:15–3:30 PM Pacif
 
 Slides will be posted after the session.
 
+## Scripts, queries and notebooks
+
+The code for this session is in [toolkit/](toolkit/).
+
 ## Deliveries
 
 See [deliveries.md](deliveries.md).

@@ -1,0 +1,9 @@
+// 03 - Which activity failed, and why
+// Source : workspace monitoring, table FabricDataPipelinesActivityRunsLogs
+// Status : RAN LIVE 2026-11-03. Found the failing step and FailureType = UserError.
+// Caveat : in the demo data, ItemName on this table held the pipeline's ID, not
+//          its name. To get names, join to ItemJobEventLogs on the item id.
+FabricDataPipelinesActivityRunsLogs
+| where Status == "Failed"
+| project OperationStartTime, ItemName, ActivityName, ActivityType, FailureType, DurationMs
+| order by OperationStartTime desc

@@ -4,6 +4,10 @@ Public, durable home for the slides and handouts from sessions taught by **Jonat
 
 Hosted at: **https://sqllocks.github.io/speaking/**
 
+## Featured: Observability for Microsoft Fabric
+
+Queries, notebooks and scripts for watching a Fabric platform: [sessions/observability-for-microsoft-fabric/toolkit](sessions/observability-for-microsoft-fabric/toolkit/).
+
 ## Structure
 
 ```
@@ -69,6 +73,3 @@ only after `slides.pdf` responds successfully as a PDF. Add the PDF to the sessi
 folder when ready; no slide deck is generated. Delivery links use `?event=<slug>`
 for branding. The older static session pages record conference details in their
 delivery tables and do not currently read that parameter.
-
-See [OWNER-QUESTIONS.md](OWNER-QUESTIONS.md) for draft content needing confirmation,
-official URL evidence, and unresolved calendar details.

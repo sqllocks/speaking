@@ -1,0 +1,10 @@
+// 06 - Which workload is eating the capacity
+// Source : capacity overview events (Summary events carry a per-workload breakdown)
+// Status : RAN LIVE 2026-11-03.
+// Note   : this is workload level (Spark, Kusto, ...), not item level. For item
+//          level see 07, which is NOT yet run.
+CapacityEvents
+| where type has 'Summary'
+| mv-expand b = data.capacityUnitUtilizationBreakdown
+| summarize CU_seconds = round(sum(todouble(b.Utilization.Background)) / 1000.0, 1) by Workload = tostring(b.WorkloadKind)
+| order by CU_seconds desc

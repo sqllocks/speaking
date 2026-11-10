@@ -1,0 +1,28 @@
+// 09 - Completion SLA: "must complete successfully by 06:00 UTC"
+// Source : workspace monitoring, table ItemJobEventLogs
+// Status : NOT YET RUN. Written from the documented schema. Run it against
+//          your own data and adjust.
+// Heads-up: the logs are in UTC. Convert your deadline before you type it in.
+// Pattern: keep the expectations in a table, not in someone's head. Here the
+//          table is inline (datatable); move it to a real table or a lakehouse
+//          file (externaldata) when you have more than a handful.
+let sla = datatable(ItemName:string, DeadlineUtc:string)
+[
+    "Load_Claims",      "06:00",
+    "Load_Eligibility", "07:30"
+];
+let today = startofday(now());
+sla
+| extend Deadline = today + totimespan(strcat(DeadlineUtc, ":00"))
+| join kind=leftouter (
+    ItemJobEventLogs
+    | where JobStatus == "Completed" and JobEndTime >= startofday(now())
+    | summarize CompletedAt = min(JobEndTime) by ItemName
+  ) on ItemName
+| extend Status = case(
+      isnotnull(CompletedAt) and CompletedAt <= Deadline, "On time",
+      isnotnull(CompletedAt),                              "Late",
+      now() > Deadline,                                    "MISSED",
+                                                           "Not due yet")
+| project ItemName, Deadline, CompletedAt, Status
+| order by Status asc

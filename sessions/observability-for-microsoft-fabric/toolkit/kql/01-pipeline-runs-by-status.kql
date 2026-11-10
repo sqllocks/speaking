@@ -1,0 +1,10 @@
+// 01 - Pipeline runs by status
+// Source : workspace monitoring, table ItemJobEventLogs
+// Status : RAN LIVE 2026-11-03 (demo workspace)
+// Why    : the first "is anything failing?" check. Count runs per status.
+// Caveat : each job writes one row per state change (NotStarted, InProgress,
+//          then Completed or Failed). Counting rows counts state changes, not
+//          runs. Filter to a final state if you want runs.
+ItemJobEventLogs
+| where ItemKind == "Pipeline"
+| summarize count() by JobStatus

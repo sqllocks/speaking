@@ -15,7 +15,10 @@ was still in **Preview** then; check the current status before you rely on it.
    `ItemJobEventLogs` and `FabricDataPipelinesActivityRunsLogs`.
 3. Know the limits:
    - Collection is off until you turn it on. It does not backfill.
-   - Data is kept 30 days by default (you can change retention).
+   - Microsoft documents a 30-day default retention (you can change it). **Check yours.**
+     A monitoring database created on 2026-11-10 reported a retention of 36,500 days (the maximum)
+     when queried with `.show database policy retention`, so do not assume 30 days. Set the period
+     you want under Manage > Data policies, or storage grows with no limit.
    - Contributors and above can query the monitoring database.
    - One monitoring item per workspace. Several workspaces can send to one central
      Eventhouse if they are in the same Azure region. Each sending workspace gets its
